@@ -1,0 +1,6 @@
+- São bandos de dados focados em documentos 
+- A modelagem de dados com relacionamentoé opcional
+- Não utilizamos queries e sim metodos de classes para trabalhar com os dados
+- As tabelas não existem, temos as collections
+- Não precisamos definir a estrutura da collection previamente
+- MongoDB é um bando NoSQL

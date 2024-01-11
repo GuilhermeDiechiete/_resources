@@ -1,0 +1,5 @@
+
+
+tsc ./index.ts -> compilar o arquivo para JS
+
+tsc -w -> deixa o arquivo ts rodando automaticamente sem ficar compilando

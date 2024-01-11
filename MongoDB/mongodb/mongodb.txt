@@ -1,0 +1,3 @@
+MONGO DB - Banco de Dados NoSQL, baseado em documentos.
+
+No Mysql é com tabelas, linhas e colunas, no MongoDB, os dados são salvos baseados em json, so que salvos como binarios, são objetos com chave e valor

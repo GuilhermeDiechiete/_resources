@@ -1,0 +1,12 @@
+<h1>Livros Registrados</h1>
+<h5>Rota /books:  books.handlebars</h5>
+<h5><a href="/">Cadastrar Books</a></h5>
+<div class="books-container">
+    {{#each books}}
+    <div>
+        # {{this.id}} - 
+        <span class="bold"><a href="/books/{{this.id}}"> {{this.title}}</a></span> 
+        - {{this.pages}} páginas
+    </div>
+    {{/each}}
+</div>

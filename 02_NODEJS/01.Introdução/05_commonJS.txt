@@ -1,0 +1,34 @@
+CommonJS, Como ele funciona?
+O Node.js utiliza nativamente o padrão CommonJS para organização e carregamento
+de módulos. Na prática, diversas funções deste padrão será utilizada com frequência
+em um projeto Node.js. A função require('nome-do-modulo') é um exem-
+plo disso, ela carrega um módulo. E para criar um código Javascript que seja mo-
+dular e carregável pelo require, utilizam-se as variáveis globais: exports ou
+module.exports. Abaixo apresento-lhe dois exemplos de códigos que utilizam
+esse padrão do CommonJS, primeiro crie o código hello.js:
+module.exports = function(msg) {
+console.log(msg);
+};
+
+E também crie o código human.js com o seguinte código:
+exports.hello = function(msg) {
+console.log(msg);
+};
+A diferença entre o hello.js e o human.js esta na maneira de como eles
+serão carregados. Em hello.js carregamos uma única função modular e em
+human.js é carregado um objeto com funções modulares. Essa é a grande diferença
+entre eles. Para entender melhor na prática crie o código app.js para carregar esses
+módulos, seguindo o código abaixo:
+var hello = require('./hello');
+var human = require('./human');
+hello('Olá pessoal!');
+human.hello('Olá galera!');
+Tenha certeza de que os códigos hello.js, human.js e app.js estejam na
+mesma pasta e rode no console o comando: node app.js.
+E então, o que aconteceu? O resultado foi praticamente o mesmo, o app.js
+carregou os módulos: hello.js e human.js via require(), em seguida foi
+executado a função hello() que imprimiu a mensagem Olá pessoal! e por úl-
+timo o objeto human que executou sua função human.hello('Olá galera!').
+Percebam o quão simples é programar com Node.js! Com base nesses pequenos
+trechos de código já foi possível criar um código altamente escalável e modular que
+utiliza as boas práticas do padrão CommonJS.

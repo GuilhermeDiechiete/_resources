@@ -1,0 +1,1 @@
+/home/diechiete/Área\ de\ Trabalho/repository/knowledge/rust/curso_hcode/introdução\ /projeto1/target/debug/projeto1: /home/diechiete/Área\ de\ Trabalho/repository/knowledge/rust/curso_hcode/introdução\ /projeto1/src/main.rs

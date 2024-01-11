@@ -1,0 +1,34 @@
+REST-API -> Representational State Transfer
+
+Rest-api é uma forma de trabalhar para compartilhar informações, acessar banco de dados, servidor e facilitar o consumo dessas informações com aplicações modernas.
+
+Antigamente em uma aplicação web, avia um servidor, banco de dados e uma aplicação frontend que acessava o servidor que acessava o banco de dados.
+
+Com a REST-API varias aplicações podem acessala. 
+
+Ex: 
+
+    Dynamic Web App     Android App     Desktop App     Iphone App 
+        |                   |               |               |
+        |                   |               |               |
+        |                   |               |               |
+        -----------------------------------------------------
+                                |
+                                |
+                             REST API
+                                |
+                                |
+                             DATABASE
+
+
+METODOS HTTP são formas de acesso ( GET, POST, PUT, PATCH, DELETE )
+
+Em uma aplicação geralmente é criado um CRUD, que é a junção de todos esses metodos. 
+
+C  -    create  - POST ( enviar dados para o db )
+R  -    read    - GET  ( ler arquivos do db )
+U  -    update  - PUT / PATCH ( atualizar dados do db )
+D  -    delete  - DELETE ( deletar dados do db )
+
+
+SEGURANÇA DE UMA REST API - é feita atrazes de middlewares, antes de acessar a rota do crud, um middlewares é executado para saber se tem permissão para acessar ou não, podemos usar password, ou usar token de autorização ( JWT ).

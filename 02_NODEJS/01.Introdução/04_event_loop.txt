@@ -1,0 +1,13 @@
+
+    EVENT LOOP
+
+Node.js é orientado a eventos, ele segue a mesma ilosoia de orientação de eventos do Javascript client-side; a única diferença é que não existem eventos de click do mouse, keyup do teclado ou qualquer evento de componentes HTML. Na verdade
+trabalhamos com eventos de I/O do servidor, como por exemplo: o evento connect de um banco de dados, um open de um arquivo, um data de um streaming de dados e muitos outros.
+
+O Event-Loop é o agente responsável por escutar e emitir eventos no sistema. 
+
+Na prática ele é um loop ininito que a cada iteração veriica em sua ila de eventos se um determinado evento foi emitido. Quando ocorre, é emitido um evento. Ele o executa e envia para ila de executados. Quando um evento está em execução, nós podemos programar qualquer lógica dentro dele e isso tudo acontece graças ao mecanismo de função callback do Javascript.
+
+O design event-driven do Node.js foi inspirado pelos frameworks Event Machine do Ruby (http://rubyeventmachine.com) e Twisted do Python (http://twistedmatrix.com) . 
+
+Porém, o Event-loop do Node é mais performático por que seu mecanismo é nativamente executado de forma não-bloqueante. Isso faz dele um grande diferencial em relação aos seus concorrentes que realizam chamadas bloqueantes para iniciar os seus respectivos Event-loops.

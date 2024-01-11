@@ -1,0 +1,11 @@
+h1 { /* POR NOME */
+    background-color: blue;
+}
+
+h2 { /* POR CODIGO HEXADECIMAL */
+    background-color: #00ffff;
+}
+
+h3 { /* POR CODIGO RGB */
+    background-color: rgb(10, 150, 255);
+}

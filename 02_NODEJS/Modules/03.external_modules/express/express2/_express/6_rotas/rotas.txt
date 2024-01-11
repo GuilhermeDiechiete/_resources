@@ -1,0 +1,10 @@
+------------------------- MODULO DE ROTAS -------------------------
+
+- Podemos unir varias rotas em um modulo, isso vai deixar nosso codigo mais organizado 
+
+- Normalmente criamos uma pasta ou arquivo que contem estas rotas 
+- Que representam uma entidade em comum, com users 
+- Vamos utilizar um novo objeto chamado routers, e colocar as rotas nele 
+- Depois precisamos exporta-lo e importar no arquivo principal
+
+

@@ -1,0 +1,20 @@
+// CRIANDO AS TABELAS 
+
+CREATE TABLE users(
+    id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+    nome VARCHAR(255) NOT NULL, 
+    lastname VARCHAR(255) NOT NULL, 
+    age INT);
+
+// criando a tabela folha com as chaves estrangeiras 
+
+CREATE TABLE folha ( 
+    id INT AUTO_INCREMENT PRIMARY KEY, 
+    user_id INT(10) UNSIGNED NULL, salario DECIMAL(10, 2), FOREIGN KEY (user_id) REFERENCES users(id) ON UPDATE CASCADE ON DELETE SET NULL);
+
+
+
+// criando a chave estrangeira na tabela folha 
+
+ALTER TABLE folha ADD FOREIGN KEY (user_id) REFERENCES users(id);
+

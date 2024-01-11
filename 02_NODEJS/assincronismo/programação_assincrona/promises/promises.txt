@@ -1,0 +1,9 @@
+Em JavaScript, as "promises" são objetos que representam um valor que pode não estar disponível no momento da chamada da função, mas que estará disponível no futuro. Promises são uma forma de trabalhar com código assíncrono de maneira mais limpa e eficiente. Elas são amplamente utilizadas para lidar com operações assíncronas, como requisições de rede, leitura/gravação de arquivos e outras tarefas que podem levar algum tempo para serem concluídas.
+
+Uma promise pode estar em um de três estados:
+
+Pending: Estado inicial, quando a promise está aguardando a conclusão da operação assíncrona.
+
+Fulfilled: A operação assíncrona foi concluída com sucesso, e a promise possui um valor resultante.
+
+Rejected: A operação assíncrona falhou, e a promise possui um motivo (uma razão para a falha).

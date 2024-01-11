@@ -1,0 +1,8 @@
+Desenvolvendo de forma assíncrona
+É importante focar no uso das chamadas assíncronas quando trabalhamos com
+Node.js, assim como entender quando elas são invocadas. O código abaixo exem-
+pliica as diferenças entre uma função síncrona e assíncrona em relação a linha do
+tempo que ela são executadas. Basicamente criaremos um loop de 5 iterações, a cada
+iteração será criado um arquivo texto com o mesmo conteúdo Hello Node.js!.
+Primeiro vamos começar com o código síncrono. Crie o arquivo text_sync.js
+com o código abaixo:

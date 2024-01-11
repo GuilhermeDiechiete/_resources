@@ -1,0 +1,17 @@
+
+    ESCOPO DE VARIAVEIS GLOBAIS
+
+Assim como no browser, utilizamos o mesmo Javascript no Node.js, ele também utiliza escopos locais e globais de variáveis. A única diferença é como são implementados esses escopos. 
+
+No client-side as variáveis globais são criadas da seguinte
+maneira:
+
+    window.hoje = new Date();
+    alert(window.hoje);
+
+Em qualquer browser a palavra-chave window permite criar variáveis globais que são acessadas em qualquer lugar. Já no Node.js utilizamos uma outra keyword para aplicar essa mesma técnica:
+
+    global.hoje = new Date();
+    console.log(global.hoje);
+
+    

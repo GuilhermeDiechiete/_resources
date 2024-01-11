@@ -1,0 +1,5 @@
+É uma tecnica usada com javascript 
+
+Atualiza a pagina ( ou parte dela ) sem carregar ( reload )
+Comunica de forma assincrona com um servidor web, ou seja, envia e recebe dados em background
+Usa muito callback, Promise, async/await

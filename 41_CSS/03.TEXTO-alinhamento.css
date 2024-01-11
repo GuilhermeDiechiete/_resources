@@ -1,0 +1,10 @@
+main {
+    text-align: center; /* centro */
+    text-align: left; /* esquerda */
+    text-align: right; /* direita */
+    text-align: justify; /* justificado */
+
+
+    text-indent: 20px; /* espaço no inicio do paragrafo */
+
+}

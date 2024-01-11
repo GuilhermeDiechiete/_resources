@@ -1,0 +1,26 @@
+Código Síncrono (Synchronous):
+
+O código síncrono é executado em ordem, uma linha de cada vez, da primeira linha à última, em uma sequência estrita. Isso significa que cada instrução espera a instrução anterior ser concluída antes de ser executada. Em um contexto síncrono, o programa segue uma abordagem "bloqueante", onde uma instrução precisa ser totalmente executada antes de passar para a próxima. Isso é adequado para tarefas que são rápidas e não envolvem atrasos significativos.
+
+Exemplo de código síncrono em JavaScript:
+
+console.log("Passo 1");
+console.log("Passo 2");
+console.log("Passo 3");
+
+Código Assíncrono (Asynchronous):
+
+O código assíncrono permite que várias tarefas sejam executadas em paralelo, sem bloquear a execução de outras instruções. Isso é especialmente útil quando você lida com operações demoradas, como leitura de arquivos, chamadas de rede ou interações com bancos de dados, que podem levar um tempo significativo para serem concluídas. Em vez de esperar passivamente, o código assíncrono permite que você continue executando outras tarefas enquanto aguarda a conclusão de uma operação assíncrona.
+
+Exemplo de código assíncrono em JavaScript com setTimeout:
+
+console.log("Início");
+
+setTimeout(function () {
+  console.log("Tempo esgotado!");
+}, 2000); // Aguarda 2 segundos antes de executar a função de callback
+console.log("Continuando...");
+
+Neste exemplo, "Continuando..." é impresso imediatamente, e "Tempo esgotado!" é impresso após um atraso de 2 segundos. Durante esse atraso, o programa não fica bloqueado, permitindo que outras operações continuem.
+
+Em resumo, o código síncrono segue uma abordagem sequencial e bloqueante, enquanto o código assíncrono permite que várias tarefas ocorram em paralelo, melhorando a eficiência, especialmente em operações demoradas.

@@ -1,0 +1,14 @@
+Agora vamos criar o arquivo text_async.js, com seu respectivo código, di-
+ferente apenas na forma de chamar a função writeFileSync, que será a versão
+assíncrona writeFile, recebendo uma função como argumento:
+
+
+Repare no tempo de execução, o text_sync demorou 1000 milissegundos, 200
+milissegundos para cada arquivo criado.
+Já em text_async foram criados os arquivos de forma totalmente assíncrona,
+ou seja, as chamadas de I/O eram não-bloqueantes, sendo executadas totalmente em
+paralelo:
+
+Isto fez com que o tempo de execução levasse 200 milissegundos, ainal foram
+invocados 5 vezes em paralelo a função fs.writeFile(), maximizando proces-
+samento e minimizando o tempo de execução.

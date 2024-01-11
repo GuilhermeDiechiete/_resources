@@ -1,0 +1,14 @@
+
+
+
+.text-orangered {
+    color: #FF4500; /* Orangered em formato hexadecimal */
+}
+
+.text-white {
+    color: #FFFFFF; /* Branco em formato hexadecimal */
+}
+
+.bg-orangered {
+    background-color: #FF4500; /* Orangered em formato hexadecimal para o plano de fundo */
+}

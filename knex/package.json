@@ -1,0 +1,16 @@
+{
+  "name": "knex",
+  "version": "1.0.0",
+  "description": "O \"Knex\" é um construtor de consultas SQL para JavaScript, frequentemente usado em aplicativos Node.js. Ele fornece uma maneira elegante e programática de criar consultas SQL usando JavaScript, em vez de escrever SQL manualmente.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^2.5.1",
+    "mysql2": "^3.6.1"
+  }
+}

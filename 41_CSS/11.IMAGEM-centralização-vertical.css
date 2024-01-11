@@ -1,0 +1,14 @@
+
+/* AREA MAIOR */
+section {
+    position: relative;
+}
+
+/* AREA MENOR */
+article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}

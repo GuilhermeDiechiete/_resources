@@ -1,0 +1,8 @@
+
+    SINGLE THREAD 
+
+Suas aplicações serão single-thread, ou seja, cada aplicação terá instância de um único processo. Se você esta acostumado a trabalhar com programação concorrente em plataforma multi-thread, infelizmente não será possível com Node, mas saiba que existem outras maneiras de se criar um sistema concorrente, como por exemplo, utilizando clusters (assunto a ser explicado no capítulo 9.2), que é um módulo nativo do Node.js e é super fácil de implementá-lo. 
+
+Outra maneira é utilizar ao máximo a programação assíncrona. Esse será o assunto mais abordado durante o decorrer deste livro, pelo qual explicarei diversos cenários e exemplos práticos em que são executados em paralelo funções em background que aguardam o seu retorno através de funções de callback e tudo isso é trabalhado forma não-bloqueante.
+
+

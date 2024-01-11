@@ -1,0 +1,4 @@
+---------------------- MIDDLEWARES ------------------------------
+Middlewares são codigos que podem ser executados no meio/ entre (middle) de alguma ação e outra
+Por exemplo: verificar se usuario está logado, podemos ter um para está verificação 
+O metodo que nos da acesso a utilizar Middlewares é o use no Express

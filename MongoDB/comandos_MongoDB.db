@@ -1,0 +1,69 @@
+-- ver os bancos disponiveis
+show dbs
+
+-- selecionar um banco para uso 
+use nomeDoBanco
+
+-- criar uma colecao 
+db.createCollection("estados")
+
+-- ver as colecoes que existem
+show collections 
+
+-- excluir tabela
+db.nameCollection.drop()
+
+-- inserir dados
+db.estados.insert({name: "Rio Grande do Sul", sigla: "RS", regiao: "Sul"})
+
+db.estados.save({name: "Rio Grande do Sul", sigla: "RS", regiao: "Sul"})
+
+
+-- consultar todos os dados em uma colecao
+db.estados.find()
+
+db.estados.find().pretty() -- mais organizado
+
+-- consulta com filtros
+db.estados.findOne({_id: id})
+db.estados.findOne({sigla: "RS"})
+db.estados.findOne({regiao: "Sul"})
+
+-- consultar com filtros usando operador OU
+db.estados.find({$or: [{sigla: "RS", {regiao: "Sul"}}]}).pretty()
+
+-- consultar com filtros usando operador E
+db.estados.find({$and: [{sigla: "RS", {regiao: "Sul"}}]}).pretty()
+
+-- consultas por exists, se um atributo existe, mostre os dados
+db.estados.find({populacao: {$exists: true}}).pretty()
+
+-- comecar a partir de certo elemento
+db.estados.find().skip(1)
+
+-- limitar o limite de buscas
+db.estados.find().skip(1).limit(2)
+
+-- contar quantos dados tem no banco
+db.estados.count()
+
+-- trazer ou nao algum atributo do objeto
+db.estados.find({sigla: "RS"},{name: 1, sigla: 1, _id: 0})
+
+-- definir os atributos para ser exibido
+db.estados.aggregate([
+    { $project: {name: 1 , sigla: 1}}
+]).pretty()
+
+-- update em dados
+db.estados.update({sigla: "RS"}, {$set: {name: "Rio Grande do S"}})
+
+-- remover dados por filtro
+db.estados.remove({sigla: "RS"})
+
+-- excluir se nao existir um atributo, com limite de 1 remocao
+db.estados.remove({sigla: {$exists: false}}, 1)
+
+-- remover pelo valor, menos que X vai se excluido
+db.esatos.remove({populacao: {$lt: 200000}})
+

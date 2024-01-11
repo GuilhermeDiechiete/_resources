@@ -1,0 +1,21 @@
+COMANDOS 
+
+    instalar globalmente:   sudo npm install -g @vue/cli
+
+    criar um projeto:   vue create nome-do-projeto 
+
+    iniciar aplicação:  npm run serve
+
+    adicionar dependencias: vue add nomeDependencia
+
+    mamificar o arquivo para produção:  npm run build
+
+
+EXPLICAÇÕES 
+
+    pasta node_modules: onde fica as dependencias do projeto 
+    pasta public: arquivos de imagens
+    pasta src: pasta da estrutura do projeto 
+
+    arquivo .gitignore: usado para barrar arquivos na hora do push no github 
+    arquivo package.json: arquivo usado para instalar as dependencias

@@ -1,0 +1,56 @@
+tsc --init
+
+
+/* Projetos */
+// "incremental": true,                              /* Salvar arquivos .tsbuildinfo para permitir a compilação incremental de projetos. */
+// "composite": true,                                /* Habilitar restrições que permitem que um projeto TypeScript seja usado com referências de projeto. */
+// "tsBuildInfoFile": "./.tsbuildinfo",              /* Especificar o caminho para o arquivo de compilação incremental .tsbuildinfo. */
+// "disableSourceOfProjectReferenceRedirect": true,  /* Desativar a preferência por arquivos de origem em vez de arquivos de declaração ao referenciar projetos compostos. */
+// "disableSolutionSearching": true,                 /* Optar por não participar da verificação de referência de vários projetos durante a edição. */
+// "disableReferencedProjectLoad": true,             /* Reduzir o número de projetos carregados automaticamente pelo TypeScript. */
+
+/* Linguagem e Ambiente */
+"target": "es2016",                                  /* Definir a versão da linguagem JavaScript para o JavaScript emitido e incluir declarações de bibliotecas compatíveis. */
+// "lib": [],                                        /* Especificar um conjunto de arquivos de declaração de bibliotecas agrupados que descrevem o ambiente de execução de destino. */
+// "jsx": "preserve",                                /* Especificar o código JSX gerado. */
+// "experimentalDecorators": true,                   /* Habilitar suporte experimental para decoradores experimentais legados. */
+// "emitDecoratorMetadata": true,                    /* Emitir metadados de tipo de design para declarações decoradas em arquivos de origem. */
+// "jsxFactory": "",                                 /* Especificar a função de fábrica JSX usada ao direcionar a emissão de JSX do React, por exemplo, 'React.createElement' ou 'h'. */
+// "jsxFragmentFactory": "",                         /* Especificar a referência do Fragmento JSX usada para fragmentos ao direcionar a emissão de JSX do React, por exemplo, 'React.Fragment' ou 'Fragment'. */
+// "jsxImportSource": "",                            /* Especificar o especificador do módulo usado para importar as funções de fábrica JSX ao usar 'jsx: react-jsx*'. */
+// "reactNamespace": "",                             /* Especificar o objeto invocado para 'createElement'. Isso se aplica apenas ao direcionar a emissão de JSX 'react'. */
+// "noLib": true,                                    /* Desativar a inclusão de qualquer arquivo de biblioteca, incluindo o lib.d.ts padrão. */
+// "useDefineForClassFields": true,                  /* Emitir campos de classe compatíveis com o padrão ECMAScript. */
+// "moduleDetection": "auto",                        /* Controlar o método usado para detectar arquivos JS no formato de módulo. */
+
+/* Módulos */
+"module": "commonjs",                                /* Especificar qual código de módulo é gerado. */
+// "rootDir": "./",                                  /* Especificar a pasta raiz dentro de seus arquivos de origem. */
+// "moduleResolution": "node10",                     /* Especificar como o TypeScript procura um arquivo a partir de um especificador de módulo fornecido. */
+// "baseUrl": "./",                                  /* Especificar o diretório base para resolver nomes de módulos não relativos. */
+// "paths": {},                                      /* Especificar um conjunto de entradas que remapeiam importações para locais de pesquisa adicionais. */
+// "rootDirs": [],                                   /* Permitir que várias pastas sejam tratadas como uma ao resolver módulos. */
+// "typeRoots": [],                                  /* Especificar várias pastas que atuam como './node_modules/@types'. */
+// "types": [],                                      /* Especificar nomes de pacotes de tipos a serem incluídos sem serem referenciados em um arquivo de origem. */
+// "allowUmdGlobalAccess": true,                     /* Permitir o acesso a globais UMD a partir de módulos. */
+// "moduleSuffixes": [],                             /* Lista de sufixos de nome de arquivo a serem pesquisados ao resolver um módulo. */
+// "allowImportingTsExtensions": true,               /* Permitir que as importações incluam extensões de arquivo TypeScript. Requer '--moduleResolution bundler' e '--noEmit' ou '--emitDeclarationOnly' para serem definidos. */
+// "resolvePackageJsonExports": true,                /* Usar o campo 'exports' do package.json ao resolver importações de pacotes. */
+// "resolvePackageJsonImports": true,                /* Usar o campo 'imports' do package.json ao resolver importações. */
+// "customConditions": [],                           /* Condições a serem definidas além das predefinições específicas do resolvedor ao resolver importações. */
+// "resolveJsonModule": true,                        /* Ativar a importação de arquivos .json. */
+// "allowArbitraryExtensions": true,                 /* Ativar a importação de arquivos com qualquer extensão, desde que um arquivo de declaração esteja presente. */
+// "noResolve": true,                                /* Proibir 'import's, 'require's ou '<reference>'s de expandirem o número de arquivos que o TypeScript deve adicionar a um projeto. */
+
+/* Suporte JavaScript */
+// "allowJs": true,                                  /* Permitir que arquivos JavaScript façam parte do seu programa. Use a opção 'checkJS' para obter erros desses arquivos. */
+// "checkJs": true,                                  /* Habilitar relatório de erros em arquivos JavaScript verificados pelo tipo. */
+// "maxNodeModuleJsDepth": 1,                        /* Especificar a profundidade máxima da pasta usada para verificar arquivos JavaScript de 'node_modules'. Aplicável apenas com 'allowJs'. */
+
+/* Emissão */
+// "declaration": true,                              /* Gerar arquivos .d.ts a partir de arquivos TypeScript e JavaScript no seu projeto. */
+// "declarationMap": true,                           /* Criar sourcemaps para arquivos .d.ts. */
+// "emitDeclarationOnly": true,                      /* Somente gerar arquivos .d.ts e não arquivos JavaScript. */
+// "sourceMap": true,                                • Criar arquivos de sourcemaps para os arquivos JavaScript emitidos. */
+// "inlineSourceMap": true,                          /* Incluir arquivos de sourcemaps dentro do JavaScript emitido. */
+// "outFile": "./",                                  /* Especificar um arquivo que agrupa todas as saídas em um arquivo JavaScript. Se

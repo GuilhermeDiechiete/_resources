@@ -1,0 +1,8 @@
+ORM -> Object Relational Mapper 
+
+Abstrair a complexidade das queries, para trabalharmos com metodos.
+Nos concentramos na regra de negocios e não nos comandos SQL
+
+Uma ORM muito utilizada para Node.js é a Sequelize 
+Em alguns casos uma ORM pode trazer prejuizos de performance 
+A query pura executa mais rapidamente do que a ORM 

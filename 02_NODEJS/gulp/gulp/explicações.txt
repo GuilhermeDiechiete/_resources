@@ -1,0 +1,5 @@
+Documentação -> gulpjs.com
+
+Gulp é uma ferramenta de automatização
+
+INSTALAÇÃO DO GULP -> sudo npm install -g gulp-cli

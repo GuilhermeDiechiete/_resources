@@ -1,0 +1,13 @@
+Os cinco pilares da Programação Orientada a Objetos (POO) são os princípios fundamentais que guiam a estruturação de programas baseados nesse paradigma. Esses pilares são:
+
+Abstração: Abstração é o processo de simplificar complexidades, extraindo informações relevantes e ignorando detalhes desnecessários. Na POO, você cria classes que representam objetos do mundo real e define atributos e métodos que encapsulam o comportamento e as propriedades desses objetos.
+
+Encapsulamento: O encapsulamento é o conceito de ocultar os detalhes internos de um objeto e expor apenas a interface necessária para interagir com ele. Isso é alcançado por meio do uso de modificadores de acesso, como públicos, privados e protegidos, para controlar o acesso aos atributos e métodos de uma classe.
+
+Herança: A herança permite que uma classe (chamada de classe filha ou subclasse) herde características e comportamentos de outra classe (chamada de classe pai ou superclasse). Isso promove a reutilização de código e cria uma hierarquia de classes.
+
+Polimorfismo: Polimorfismo significa "muitas formas" e permite que objetos de classes diferentes respondam de maneira diferente aos mesmos métodos. Isso é alcançado por meio da sobreposição de métodos (métodos com o mesmo nome em classes diferentes) e da capacidade de tratar objetos de classes derivadas como objetos de sua classe base.
+
+Associação: A associação é a relação entre objetos, onde um objeto pode se relacionar com outro objeto por meio de uma associação direta ou indireta. As associações podem ser simples, como uma classe que contém uma referência a outra classe, ou mais complexas, como associações de muitos para muitos.
+
+Esses cinco pilares são fundamentais para a POO e ajudam a criar sistemas de software mais organizados, flexíveis e fáceis de manter. Eles são aplicados de maneira conjunta para projetar e desenvolver sistemas orientados a objetos de forma eficaz.

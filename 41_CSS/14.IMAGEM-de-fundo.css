@@ -1,0 +1,19 @@
+
+/* ADICIONAR IMAGEM DE FUNDO */
+body { 
+    background-image: url('../imagens/wallpaper001.jpg');
+}
+
+    /* 
+    
+    PARA A IMAGEM NAO REPETIR 
+    ( background-repeat: no-repeat; )
+    
+    0CUPAR TODA A AREA
+    ( backgroud-size: 100% 100%  )
+    
+    */
+    
+
+    
+

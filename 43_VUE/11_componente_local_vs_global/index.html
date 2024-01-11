@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+
+    <section id="app">
+
+        <global></global>
+        <local1></local1>
+
+    </section>
+
+    <hr>
+
+    <section id="app2">
+
+        <global></global>
+        <local1></local1> <!--nao vai funcionar porque não chamei o componente localmente na instancia-->
+
+    </section>
+
+
+    <script>
+
+        // componente registrado globalmente
+        Vue.component('global', {
+            template: `
+                <div>  
+                    <h1>{{ title }}</h1>
+                </div> `,
+
+            data(){
+                return {
+                    title: 'Componente Global'
+                }
+            }
+        })
+
+        // variavel para usar no componente local
+        const local = {
+            
+            template: `
+                <div>  
+                    <h1>{{ title }}</h1>
+                </div> `,
+
+            data(){
+                return {
+                    title: 'Componente Local'
+                }
+            }}
+
+
+
+        new Vue({
+            el: '#app',
+            components: {
+                local1: local
+            }
+
+        }),
+        new Vue({
+            el: '#app2',
+
+        })
+    </script>
+</body>
+</html>

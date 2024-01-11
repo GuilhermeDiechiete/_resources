@@ -1,0 +1,12 @@
+/* CENTRALIZAR UMA IMAGEM NO MEIO DE UMA AREA */
+div {
+
+    border: 1px solid black;
+    height: 98vh;
+    
+    background-image: url('../imagens/pattern001.png');
+    background-repeat: no-repeat;
+
+    background-position: center center;
+}
+

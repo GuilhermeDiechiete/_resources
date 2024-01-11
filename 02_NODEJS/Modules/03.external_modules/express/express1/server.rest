@@ -1,0 +1,39 @@
+// SIMULA UM CLIENTE ACESSANDO A ROTA OU UTILIZANDO
+
+### get admin
+GET http://localhost:3000/admin
+### get admin com id
+GET http://localhost:3000/admin/250
+### acessando via post
+POST http://localhost:3000/admin 
+Content-Type: application/json
+
+{
+    "login":"guilherme",
+    "senha":"123"
+}
+### usando PATCH
+PATCH http://localhost:3000/user/admin
+### usando PUT
+PUT http://localhost:3000/user/admin
+### usando DELETE
+DELETE http://localhost:3000/admin
+//------------------------------------------
+### get user
+GET http://localhost:3000/user
+### get user com id
+GET http://localhost:3000/user/250
+### acessando via post
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "login":"guilherme",
+    "senha":"123"
+}
+### usando PATCH
+PATCH http://localhost:3000/user
+### usando PUT
+PUT http://localhost:3000/user
+### usando DELETE
+DELETE http://localhost:3000/user

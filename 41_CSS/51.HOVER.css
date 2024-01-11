@@ -1,0 +1,7 @@
+/* QUANDO O MOUSE PASSAR FAZ AS ALTERAÇÕES QUE ESTÃO DEFINIDAS */
+
+nav > a:hover {
+    background-color: var(--verde3);
+    color: var(--verde5);
+    border-radius: 10px;
+}

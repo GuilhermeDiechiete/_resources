@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Perfil</h1>
+
+    <%= %> <!--exibir valor de uma variavel-->
+
+    <p>Nome: <%= nome %> </p><br>
+    <p>Lang: <%= lang %></p><br>
+    
+    <!-- CONDICIONAIS DO EJS-->
+    <% if(msg){%>
+        <h3>Condicionais com EJS -- true --!</h3>
+    <%} else {%>
+        <h3>Condicionais com EJS -- false --!</h3>
+    <%}%>
+
+    <!--LAÇO DE REPETIÇÕES DO EJS-->
+    <% produtos.forEach(function(produto){ %>
+        <%= produto.nome %>
+        <%= produto.preco %>
+    <% }) %>
+    <hr>
+    <!--MOSTRAR IMAGENS-->
+    <img src="/img/ejs.bin" alt="">
+    
+    
+</body>
+</html>

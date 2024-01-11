@@ -1,0 +1,12 @@
+O que é nodeJS?
+
+    NodeJs possibilita usar JavaScript no Backend
+    Para se comunicar com o Backend usamos as ROTAS, eventos.
+    NodeJS não é uma linguagem, é uma plataforma.
+
+Caracteristicas do NodeJS
+
+    Arquitetura Event-loop ( callback (pilha de eventos))
+    single-thread
+    non-blocking I/O 
+    

@@ -1,0 +1,6 @@
+CRUD -> são as ações que mais são utilizadas em todas as aplicações
+
+Create - criar / inserir dados ( insert)
+Read - ler dados (select)
+Update - atualizar dados (update)
+Delete - deletar / remover dados (delete)

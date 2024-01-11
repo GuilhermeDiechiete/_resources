@@ -1,0 +1,19 @@
+
+body {
+    height: 100vh;
+    background-image: url('../imagens/wallpaper001.jpg');
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div {
+    background-color: yellow;
+    background-position: center center;
+    height: 70vh;
+    width: 200px;
+    border: 1px solid black;
+    margin: auto;
+    
+}

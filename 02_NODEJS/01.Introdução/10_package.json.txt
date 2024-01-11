@@ -1,0 +1,51 @@
+Todo projeto Node.js é chamado de módulo, mas o que é um módulo? No decorrer da leitura, perceba que falarei muito sobre o termo módulo, biblioteca e framework, e na prática eles possuem o mesmo signiicado. O termo módulo surgiu do conceito de que a arquitetura do Node.js é modular. E todo módulo é acompanhado de um arquivo descritor, conhecido pelo nome de package.json.
+
+Este arquivo é essencial para um projeto Node.js. Um package.json mal escrito pode causar bugs ou impedir o funcionamento correto do seu módulo, pois ele possui alguns atributos chaves que são compreendidos pelo Node.js e NPM.
+
+No código abaixo apresentarei um package.json que contém os principais
+atributos para descrever um módulo:
+
+
+    {
+        "name": "meu-primero-node-app",
+        "description": "Meu primeiro app em Node.js",
+        "author": "Caio R. Pereira <caio@email.com>",
+        "version": "1.2.3",
+        "private": true,
+        "dependencies": {
+            "modulo-1": "1.0.0",
+            "modulo-2": "~1.0.0",
+            "modulo-3": ">=1.0.0"
+    },
+        "devDependencies": {
+            "modulo-4": "*"
+    }
+    }
+
+Com esses atributos, você já descreve o mínimo possível o que será sua aplicação.
+
+O atributo name é o principal, com ele você descreve o nome do projeto, nome pelo qual seu módulo será chamado via função require('meu-primeiro-node-app'). 
+
+Em description descrevemos o que será este módulo. Ele deve ser escrito de forma curta e clara explicando um resumo do módulo. 
+
+O author é um atributo para informar o nome e email do autor, utilize o formato: Nome <email> para que sites como (https://npmjs.org) reconheça corretamente esses dados. Outro atributo principal é o version, é com ele que deinimos a versão atual do módulo, é extremamente recomendado que tenha este atributo, senão será impossível instalar o módulo via comando npm.
+
+O atributo private é um booleano, e determina se o projeto terá código aberto ou
+privado para download no (https://npmjs.org) .
+
+Os módulos no Node.js trabalham com 3 níveis de versionamento. Por exemplo, a versão 1.2.3 esta dividida nos níveis: Major (1), Minor (2) e Patch (3). Repare que no campo dependencies foram incluídos 4 módulos, cada módulo utilizou uma forma diferente de deinir a versão que será adicionada no projeto. 
+
+O primeiro, o modulo-1 somente será incluído sua versão ixa, a 1.0.0. Utilize este tipo versão para instalar dependências cuja suas atualizações possam quebrar o projeto pelo simples fato de que certas funcionalidades foram removidas e ainda as utilizamos na aplicação. 
+
+O segundo módulo já possui uma certa lexibilidade de update. 
+
+Ele utiliza o caractere ~ que faz atualizações a nível de patch (1.0.x), geralmente essas atualizações são seguras, trazendo apenas melhorias ou correções de bugs. 
+
+O modulo-3 atualiza versões que seja maior ou igual a 1.0.0 em todos os níveis de versão. 
+
+Em muitos casos utilizar ”>=” pode ser perigoso, por que a dependência pode ser atualizada a nível major ou minor, contendo grandes modiicações que podem quebrar um sistema em produção, comprometendo seu funcionamento e exigindo que você atualize todo código até voltar ao normal. 
+
+O último, o modulo-4, utiliza o caractere "*”, este sempre pegará a última versão do módulo em qualquer nível. 
+
+Ele também pode causar problemas nas atualizações e tem o mesmo comportamento do versio-
+namento do modulo-3. Geralmente ele é utilizado em devDependencies, que são dependências focadas para testes automatizados, e as atualizações dos módulos não prejudicam o comportamento do sistema que já está no ar.

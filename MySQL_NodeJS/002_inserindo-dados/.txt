@@ -1,0 +1,3 @@
+Precisamos instalar o modulo do mysql 
+
+    -npm install mysql 

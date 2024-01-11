@@ -1,0 +1,6 @@
+/* DEGRADE EM FUNDOS */
+
+body {
+    /*                                (direção, 1 cor, 2 cor ) */
+    background-image: linear-gradient(to right, orange, red);
+}

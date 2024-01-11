@@ -1,0 +1,35 @@
+Atributos (ou Propriedades):
+
+O que são: Atributos são variáveis ou campos que armazenam informações sobre um objeto. Eles representam as características ou dados que um objeto de uma classe específica pode ter. Por exemplo, em uma classe "Carro", os atributos podem incluir "cor", "modelo", "ano" e assim por diante.
+
+Características: Os atributos determinam as características individuais dos objetos de uma classe. Cada objeto criado a partir da classe terá seus próprios valores para esses atributos.
+
+Exemplo em código: Em uma linguagem como Python, um atributo pode ser definido da seguinte forma:
+
+
+class Carro:
+    def __init__(self, cor, modelo, ano):
+        self.cor = cor
+        self.modelo = modelo
+        self.ano = ano
+
+
+Métodos:
+
+O que são: Métodos são funções associadas a uma classe que definem o comportamento dos objetos dessa classe. Eles representam as ações que os objetos podem executar. Por exemplo, em uma classe "Carro", os métodos podem incluir "ligar", "desligar", "acelerar" e assim por diante.
+
+Comportamento: Os métodos determinam o comportamento dos objetos. Quando um método é chamado em um objeto, ele pode executar operações nos atributos desse objeto e realizar várias tarefas.
+
+Exemplo em código: Em Python, um método pode ser definido da seguinte forma:
+
+class Carro:
+    def __init__(self, cor, modelo, ano):
+        self.cor = cor
+        self.modelo = modelo
+        self.ano = ano
+    
+    def ligar(self):
+        print("O carro está ligado.")
+    
+    def acelerar(self, velocidade):
+        print(f"O carro está acelerando a {velocidade} km/h.")

@@ -1,0 +1,26 @@
+INSTALAÇÃO DO EXPRESS
+
+  npm install -g express-generator
+
+
+CRIAR PASTA DO PROJETO COM UMA EXTRUTURA DE PROJETO (PUG)
+
+  express nomePastaProjeto --view=pug 
+
+DEPOIS DE CRIAR A PASTA 
+
+  cd nomePastaProjeto 
+  npm install
+  SET DEBUG=nomePastaProjeto:* & npm start ( para windows )
+
+
+EXTRUTURA DA PASTA 
+
+bin -> 
+node_modules -> 
+public -> 
+routes -> rotas 
+views -> 
+app.js -> 
+
+

@@ -1,0 +1,17 @@
+
+    HISTORIA DO NODE
+
+
+    O PROBLEMA DAS ARQUITETURAS BLOQUEANTES
+
+Os sistemas para web desenvolvidos sobre plataforma .NET, Java, PHP, Ruby ou Python possuem uma característica em comum: eles paralisam um processamento enquanto utilizam um I/O no servidor. Essa paralisação é conhecida como modelo bloqueante (Blocking-hread). Em um servidor web podemos visualizá-lo de forma ampla e funcional. Vamos considerar que cada processo é requisição feita pelo usuário. Com o decorrer da aplicação, novos usuários vão acessando-a, gerando uma requisição no servidor. Um sistema bloqueante enileira cada requisição e depois as processa, uma a uma, não permitindo múltiplos processamentos delas. Enquanto uma requisição é processada as demais icam em espera, mantendo por um período
+de tempo uma ila de requisições ociosas.
+
+Esta é uma arquitetura clássica, existente em diversos sistemas pelo qual possui um design ineiciente. É gasto grande parte do tempo mantendo uma ila ociosa enquanto é executado um I/O. Tarefas como enviar e-mail, consultar o banco de dados, leitura em disco, são exemplos de tarefas que gastam uma grande fatia desse tempo, bloqueando o sistema inteiro enquanto não são inalizadas. Com o aumento de acessos no sistema, a frequência de gargalos serão mais frequentes, aumentando a necessidade de fazer um upgrade nos hardwares dos servidores. Mas upgrade das máquinas é algo muito custoso, o ideal seria buscar novas tecnologias que façam bom uso do hardware existente, que utilizem ao máximo o poder do processador atual, não o mantendo ocioso quando o mesmo realizar tarefas do tipo bloqueante. 
+
+
+    E ASSIM NASCEU O NODE.JS
+
+Foi baseado neste problema que, no inal de 2009, Ryan Dahl com a ajuda inicial de 14 colaboradores criou o Node.js. Esta tecnologia possui um modelo inovador, sua arquitetura é totalmente non-blocking thread (não-bloqueante), apresentando uma boa performance com consumo de memória e utilizando ao máximo e de forma eiciente o poder de processamento dos servidores, principalmente em sistemas que produzem uma alta carga de processamento. Usuários de sistemas Node estão livres de aguardarem por muito tempo o resultado de seus processos, e principalmente não sofrerão de dead-locks no sistema, porque nada bloqueia em sua plataforma e desenvolver sistemas nesse paradigma é simples e prático.
+
+Esta é uma plataforma altamente escalável e de baixo nível, pois você vai programar diretamente com diversos protocolos de rede e internet ou utilizar bibliotecas que acessam recursos do sistema operacional, principalmente recursos de sistemas baseado em Unix. O Javascript é a sua linguagem de programação, e isso foi possível graças à engine Javascript V8, a mesma utilizada no navegador Google Chrome.

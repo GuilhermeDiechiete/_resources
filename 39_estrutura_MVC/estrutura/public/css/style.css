@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* CONFIGURAÇÃO NAVEGAÇÃO */
+
+nav {
+    background-color: orangered;
+    padding: 0.5em;
+    display: flex;
+}
+nav ul {
+    display: flex;
+    
+}
+nav ul li {
+    list-style: none;
+    padding-left: 1em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* CONFIGURAÇÃO CRIAÇÃO DE TASKS */
+.container {
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    margin: 0 auto;
+    padding: 2em;
+    height: 100vh;
+}
+.form {
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    padding: 1em;
+    border-radius: 2em;
+}
+.form h2 {
+    color: orangered;
+    padding: 1em;
+}
+
+.form div label {
+    color: white;
+    font-size: small;
+}
+
+.form div input {
+    border-radius: 0.3em;
+    padding: 0.5em 0em 0.5em 1em;
+    width: 60%;
+    margin-bottom: 1em;
+}
+.form div textarea {
+    border-radius: 0.3em;
+    padding: 0.5em 0em 0.5em 1em;
+    width: 60%;
+}
+.button {
+    background-color: orangered;
+    margin: 1em;
+    padding: 0.3em;
+    width: 18%;
+    border-radius: 0.2em;
+}
+
+.done {
+    text-decoration: line-through;
+    color: rgb(82, 82, 82);
+}
+.title {
+    color: white;
+    text-decoration: none;
+}
+.title:hover {
+    color: orangered;
+}
+/* CONFIGURAÇÕES LISTA DE TAREFAS */
+
+.task-list {
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.task-list h2 {
+    color: orangered;
+    padding: 1em;
+}
+.task-list li  {
+    margin: 0 auto;
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid orangered;
+}
+
+
+
+
+.task-list i {
+    font-size: 1em;
+    margin-right: 0.6em;
+    color: rgb(197, 194, 194);
+}
+.task-list i:hover {
+    color: orangered;
+}
+.actions {
+    display: flex;
+}
+.form-all {
+    margin: 0;
+}
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* EDITAÇÃO DE TAREFA */
+.h2-edit {
+    display: flex;
+}
+p {
+    color: white;
+    padding-left: 1em;
+    font-size: small;
+    line-height: 1.3lh;
+}
+

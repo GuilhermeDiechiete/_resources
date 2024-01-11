@@ -1,0 +1,14 @@
+O que é template engine?
+
+Uma forma de deixar o HTML dinamico, inserindo variaveis do back end no front end 
+Podemos criar layouts, que sao reaproveitados 
+É essencial para projetos que usam banco de dados, que não sao estaticos 
+Temos diversos disponiveis: EJS, Pug, Handlebars...
+
+O que é Handlebars
+
+É uma das template engines mais utilizadas 
+Colocamos os dados dinamos no HTML entre {{}} para serem inpressos
+Podemos criar condicionais e tambem loops no template 
+Conhecido pela sua sintaxe limpa no front, nos força a não executar logica no HTML 
+Nome do pacote: express-handlebars

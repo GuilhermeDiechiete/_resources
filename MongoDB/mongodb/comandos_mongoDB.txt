@@ -1,0 +1,69 @@
+COMANDOS PARA CONSULTA ( terminal )
+
+// USAR O BANCO
+    use db_lubrax
+
+---------------------------------------------------------------------------------------
+
+// INSERIR DADOS NO BANCO ( um registro )
+
+    db.filtros.insertOne({_id:1, name: "FCD0777", value:59})
+
+// INSERIR DADOS NO BANCO ( varios registros )
+
+    db.filtros.insertMany([
+        {_id:2, name: 'FCD0282', value: 52},
+        {_id:3, name: 'PU2713', value: 20},
+        {_id:4, name: 'FCD1513', value: 103},
+
+    ])
+
+---------------------------------------------------------------------------------------
+
+// BUSCAR DADOS 
+
+    db.filtros.find()
+
+    db.filtros.find({_id: 2})  // buscar pelo id
+
+    db.filtros.find({value: {$lt: 5000}}) // menor que ($lt)
+    db.filtros.find({value: {$gt: 5000}}) // maior que ($gt)
+
+    // condição or ( ou )
+    db.filtros.find({$or: [{value: {$lt: 5000}}, {_id: {$gt: 2}}]}) 
+
+    // condição and ( e )
+    db.filtros.find({value: {$gt: 1000}, value: {$lt: 5000}}) 
+
+---------------------------------------------------------------------------------------
+
+// ALTERAR APENAS UM REGISTRO 
+
+    db.filtros.updateOne({_id: 2}, { $set: {name: 'FCD285', value: 60}})
+
+
+
+// ADICIONAR UM CAMPO COM A DATA DE MODIFICAÇÃO
+
+    db.filtros.updateOne({_id: 2}, { $set: {name: 'FCD285', value: 60}, $currentDate: { lastModified: true }}) 
+
+
+// ALTERAR VARIOS REGISTROS DEPENDENDO DA CONDIÇÃO APLICADA,
+
+    db.filtros.updateMany({value: {$lt: 200}}, {$set:{value:100}, $currentDate: { lastModified: true}})
+
+
+// SUBSTITUIR UM REGISTRO POR COMPLETO (se nao colocar o campo, ele é deletado )
+
+    db.filtros.replaceOne({_id:4}, {name: 'PU265'})
+
+---------------------------------------------------------------------------------------
+
+// DELETAR UM REGISTRO
+
+    db.filtros.deleteOne({_id: 1})
+
+
+// DELETAR VARIOS REGISTROS ( com condição)
+
+    db.filtros.deleteMany({value: 165})

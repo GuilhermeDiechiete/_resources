@@ -1,0 +1,35 @@
+/*
+                        MARGIN
+*****************************************************
+*                       BORDER                      *
+*   *********************************************   *
+*   *                   PADDING                 *   *
+*   *   *************************************   *   *
+*   *   *                                   *   *   *
+*   *   *      CONTEUDO (paragrafo)         *   *   *
+*   *   *                                   *   *   *
+*   *   *                                   *   *   *
+*   *   *************************************   *   *
+*   *                                           *   *
+*   *********************************************   *
+*                                                   *
+*****************************************************
+
+*/
+
+/* PADDING  -> cria um espaço em volta do conteudo*/      
+p { padding: 40px 0px 40px 0px; /* top rigth bottom left */
+}
+
+/* MARGIN */
+p {
+    margin: 20px 10px 5px 10px; /* top rigth bottom left */
+    margin: 20px 0px; /* top,bottom / rigth,left */
+    margin: 20px; /* todos os lados */
+}
+
+/* BORDA */
+P {
+    /*   espessura - solido/degrade - cor */
+    border: 2px solid black;
+}

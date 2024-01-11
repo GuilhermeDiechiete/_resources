@@ -1,0 +1,33 @@
+Funções de Middleware 
+
+    - São funções que podem interferir na requisição do usuario ou na resposta do servidor para o usuario. 
+    - Quando o usuario chama uma rota, um Middleware pode interferir no caminho e pedir alguma coisa.
+    - Podemos executar qualquer coisa em uma função de Middleware.
+
+
+    TIPOS DE MIDDLEWARE 
+
+    Nivel de aplicação: são funções que construimos e queremos que ela aconteça em quanto a aplicaçãoestá rodando, queremos que ela carregue junto com a aplicação. 
+
+        Ex: app.use(express.json())
+
+    Nivel de rota: são funções que 
+
+
+
+
+PRINCIPAIS MIDDLEWARE DE TERCEIROS 
+
+body-parser 
+compression
+cors 
+cookie-parser
+
+Como utilizar Middleware de terceiros:
+
+    npm install nomeMiddleware
+
+    const express = require('express')
+    const cors = require('cors')
+    const app = express()
+    app.use(cors())

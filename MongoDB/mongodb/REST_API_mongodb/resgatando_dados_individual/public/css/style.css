@@ -1,0 +1,14 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+/* MENU */
+#navbar {
+    background-color: cornflowerblue;
+}
+.container {
+    background-color: antiquewhite;
+}

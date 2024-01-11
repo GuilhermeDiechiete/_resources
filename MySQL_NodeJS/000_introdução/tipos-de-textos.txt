@@ -1,0 +1,21 @@
+TIPOS DE TEXTOS 
+
+
+CHAR(x) aceita textos com 0 a 255 caracteres
+VARCHAR(x) aceita textos com 0 a 65535 caracteres
+
+TINYTEXT aceita apenas texto com até 255 caracteres
+MEDIUMTEXT aceita apenas texto com até 16777215 caracteres
+
+cry 
+wrong
+movie
+prison
+ticket
+tittle
+mix 
+noble
+bufffalo
+execute
+final
+forest

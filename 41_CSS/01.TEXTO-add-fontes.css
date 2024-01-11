@@ -1,0 +1,20 @@
+/* ADICIONAR FONTES PADROES */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ADICIONAR FONTES EXTERNAS */
+
+@font-face {
+    font-family: 'android';
+    src: url(arquivos-fontes/idroid.otf) format('opentype'); }
+
+    /*
+    TIPOS DE FONTES
+
+    opentype - otf
+    truetype - ttf
+    embedded - opentype
+    truetype-att - Apple Advanced Typography
+    */

@@ -1,0 +1,4 @@
+
+
+// Typeof Type Guard
+

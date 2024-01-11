@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+</head>
+<body>
+    
+    <section id="app">
+        <ul>
+            <li v-for="cor in cores">{{ cor }}</li>
+        </ul>
+
+        <!--acessar o indice atual-->
+        <ul>
+            <li v-for="(cor, i) in cores">{{ i +1 }} - {{ cor }}</li>
+        </ul>
+
+        <!-- v-for com templates -->
+        <div v-for="(cor, i) in cores">
+            <h1>{{ i }} -- {{cor}}</h1>
+        </div>
+
+        <ul>
+            <li v-for="pessoa in pessoas">
+                {{ pessoa.nome }}
+
+                <div v-for="(valor, chave) in pessoa">
+                    {{chave}} - {{ valor }}
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>

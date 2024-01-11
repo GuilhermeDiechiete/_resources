@@ -1,0 +1,4 @@
+BIT(X)  1 a 64 caracteres
+TINYINT(X) 1 a 255 caracteres
+BOOL  0 é false e o resto é true
+INT(X)  valores entre -2147483648 a 2147483647

@@ -1,0 +1,1 @@
+É toda função que está entre a requisição e a resposta

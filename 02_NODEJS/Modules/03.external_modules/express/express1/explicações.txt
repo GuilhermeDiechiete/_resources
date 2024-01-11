@@ -1,0 +1,30 @@
+CONSTRUÇAO DO PROJETO 
+
+    1 - criar uma pasta  para o projeto 
+    2 - npm init -y -> criar o package.json
+    3 - npm install express 
+    4 - express nomePastaProjeto --view=pug -> criar a arquitetura do projeto 
+    5 - fazer os comandos que o express mandar
+
+
+Express -> API de Terceiro ( modulo externo )
+
+
+
+Express == Framework web rápido, flexivel e minimalista.
+
+Por que utilizar Express?
+
+    Rotas: Caminhos que utilizamos para chegar a um ponto da aplicação.
+
+    Middleware: fazer uma manipulação no meio de alguma execução
+
+    Templates:podemos usar mecanismos de template, como o pug, randlebars ( HTML mais otimizado)
+
+
+    MVC:
+        model: trabalhar com os dados, manipulação das informações, os dados que o usuario esta manipulando.
+
+        view: camada de visualização
+
+        controler: 

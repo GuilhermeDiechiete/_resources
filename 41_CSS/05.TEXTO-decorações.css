@@ -1,0 +1,9 @@
+
+
+/* TIRAR DECORAÇÕES DE TEXTOS */
+a { text-decoration: none;}
+
+/* SOMBRA EM TEXTO */
+h1 { text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.753); }
+
+

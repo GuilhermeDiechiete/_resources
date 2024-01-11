@@ -1,0 +1,31 @@
+------------------------- EXPRESS ------------------------------
+- Um framework para Node.js muito utilizado
+- Serve para criarmos aplicações web
+- Nele podemos criar rotas, renderizar HTML, conectar a um banco de dados 
+- O express torna a criação de apps muito mais simplificada, do que com os Modulos Nativos 
+
+----- ROTAS ----------------------------------------------------
+- Rota é um conceito importante e presente em aplicações web
+- Basicamente são as URLs que acessamos 
+- Se criamos uma rota /produtos, podemos acessar atraves da URL www.nossosite.com/produtos 
+- Quando o usuario acessa podemos acessar varias logicas, como carregar produtos do banco de dados. 
+
+----- RENDERIZANDO HTML ----------------------------------------
+- Para enviar HTML como resposta utilizamos o metodo senFile
+- Isso faz com que o arquivo seja renderizado no navegador 
+- Precisamos acessar o arquivo por meio do diretorio base, isso requer o modulo pathh
+
+
+---------------------- MIDDLEWARES ------------------------------
+Middlewares são codigos que podem ser executados no meio/ entre (middle) de alguma ação e outra
+Por exemplo: verificar se usuario está logado, podemos ter um para está verificação 
+O metodo que nos da acesso a utilizar Middlewares é o use no Express
+
+
+---------------- PARAMETROS POR URL ----------------------------------
+Podemos resgatar os parametros da URL por meio do req 
+Acessamos req.params.<nome>
+Onde nome deve ser o que está definido na URL do Express 
+Que fica desta forma: /users/:id
+Neste caso estamos buscando o usuario pelo id
+Esse parametro vem pela URL
