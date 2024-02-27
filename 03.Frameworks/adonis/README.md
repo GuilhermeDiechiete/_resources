@@ -1,90 +1,29 @@
-# COMMANDS ADONIS.JS
+# Projeto com Adonis.js
 
-## START PROJECT
+Este é um projeto utilizando o framework Adonis.js para desenvolvimento web em Node.js.
 
-### (--api-only -> creates the project without the views part )
+## Sobre o Adonis.js
 
-```
-adonis new *projectname* --api-only 
-```
+Adonis.js é um framework MVC (Model-View-Controller) para Node.js que visa facilitar o desenvolvimento de aplicativos web e APIs com uma estrutura sólida e extensível. Ele fornece uma arquitetura robusta, incluindo autenticação, ORM (Object-Relational Mapping), validação de dados, entre outras funcionalidades, permitindo que os desenvolvedores foquem na lógica de negócios de suas aplicações.
 
-
-## MIGRATIONS
-
-### create migrations file
-
-```
-adonis make:migration *migrationName* 
-```
-
-### creates migrations in the database
-
-```
-adonis migration:run 
-```
-
-### undo the last creation
-
-```
-adonis migration:reset 
-```
-
-### see migrations 
-
-```
-adonis migration:status 
-```
+Para mais informações sobre o Adonis.js, consulte a documentação oficial em [https://adonisjs.com/docs](https://adonisjs.com/docs).
 
 
+## Estrutura do Projeto
 
-## SEEDS
+- `app/`: Contém a lógica da aplicação, incluindo models, controllers, middlewares, etc.
+- `start/`: Contém arquivos de inicialização, como arquivos de configuração e rotas.
+- `database/`: Contém arquivos de migração e seeds para manipulação do banco de dados.
+- `public/`: Diretório público para arquivos estáticos, como imagens, CSS e JavaScript.
+- `resources/`: Contém arquivos de visualização, como templates HTML, que são compilados para o diretório `public/` durante o desenvolvimento.
+- `tests/`: Contém testes automatizados para a aplicação.
 
-### create seed file 
+## Contribuindo
 
-```
-adonis make:seed *seedName* 
-```
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-### run seeds
+## Licença
 
-```
-adonis seed 
-```
-
-
-
-## MODELS
-
-### create model file
-
-```
-adonis make:model *modelName* 
-```
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
 
-
-## CONTROLLERS
-
-### create controller file
-
-```
-adonis make:controller *controllerName* 
-```
-
-
-
-## ROUTES
-
-### see available routes
-
-```
-adonis route:list 
-```
-
-## VALIDATORS
-
-### create validator file
-
-```
-adonis make:validator *validatorName*
-```

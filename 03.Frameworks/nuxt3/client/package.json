@@ -7,18 +7,11 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  },
-  "devDependencies": {
-    "@nuxt/eslint-config": "^0.2.0",
-    "eslint": "^8.56.0",
-    "nuxt": "^3.10.0",
-    "vue": "^3.4.15",
-    "vue-router": "^4.2.5"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "bulma": "^0.9.4"
+    "nuxt": "^3.10.3",
+    "vue": "^3.4.19",
+    "vue-router": "^4.3.0"
   }
 }
