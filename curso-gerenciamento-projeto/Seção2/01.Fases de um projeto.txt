@@ -1,0 +1,44 @@
+
+FASES DE UM PROJETO 
+
+1. DEFINIÇÃO:
+
+    Definição das diretrizes base do projeto:
+
+        Objetivo do projeto
+        Equipe que vai desenvolver
+        Partes interessadas
+        Outras informações
+
+        É nessa fase que os clientes, patrocinadores, equipe, Gerente de projeto e a direção da empresa vai avaliar o projeto antes mesmo de ser criado e confirmar para ser desenvolvido.
+
+
+2. PLANEJAMENTO:
+
+    Planejar é colocar em ordem, é ser proativo, antecipando como as coisas vão acontecer, quais tarefas serão executadas, quais pessoas vão executar, quanto tempo é necessário...
+    Criar um cronograma de atividades do projeto e definir como tudo sera feito
+
+
+3. EXECUÇÃO:
+
+    Executar o que foi planejado, para essa fase, é necessário estar com a definição e planejamento pronto.
+
+4. MONITORAMENTO E CONTROLE:
+
+    Onde o gerente de projeto vai atuar, cuidar o cronograma, monitorar o tempo, analisar os riscos
+
+5. ENCERRAMENTO:
+
+    Finalizar o projeto e extrair o melhor do projeto para levar para outros futuramente.
+
+
+
+
+
+Observação sobre mudanças: Definiçção: Na definição é a melhor fase para uma mudança, um exemplo, você vai construir uma casa e decide mudar e ter mais um quarto, é só definir mais um quarto.
+
+Observação sobre mudanças: Planejamento: No planejamento, já é um pouco mais complicado, digamos que você quer mais um quarto, você avisa o arquiteto e ele já fez o desenho do imovel, ele vai precisar refazer o desenho novamente
+
+Observação sobre mudança: Execução: Na execução já é mais complicado, image que a obra já está em andamento, com todas as paredes levantadas, você decide ter mais um quarto, será necessário ajustar e quebrar as paredes da casa.
+
+    A maioria dos problemas que surgem durante a etapa de execução de um projeto são decorrentes de uma falha durante a etapa de planejamento.

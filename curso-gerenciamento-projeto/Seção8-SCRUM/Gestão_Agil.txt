@@ -1,0 +1,44 @@
+
+Gestão tradicional ( Definição, Planejamento, Execução | monitoramento e controle, encerramento)
+
+    Postos negativos: 
+        
+        O cliente nunca sabe o que quer direito.
+        Os requisitos vivem mudando.
+        Entendimento "cliente x equipe"
+        Falhas de comunicação
+
+        Com todos esses pontos negativos no tradicional, a metodologia agil ( SCRUM ) criou força;
+
+
+
+metodologia tradicional
+
+    Dirigido por planejamento 
+
+    Seguir um plano 
+
+    Processos / ferramentas
+
+    Documentação abrangente
+
+    Negociação de contrato
+
+    Indicação para projetos com escopo sujeito a poucas mudanças: Ex: contrução de uma ponte 
+
+
+Metodologia Ágil
+
+    Dirigido por valores
+
+    Responder a mudanças ( responder rapido a mudanças do cliente )
+
+    Individuos / Interações 
+
+    Produto que funciona
+
+    Colaboração com o cliente
+
+    Indicado para projetos que podem ser pensados e repensados, que possuem escopo nao petrificado durante seu desenvolvimento, Ex: Desenvolvimento de Software
+
+

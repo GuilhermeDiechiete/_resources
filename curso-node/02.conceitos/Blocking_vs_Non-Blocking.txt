@@ -1,0 +1,9 @@
+
+
+Blocking
+
+    Gera fila, um processo por vez, sempre precisa terminar um processo para começar outro.
+
+Non Blocking
+
+    Aproveita a mesma trilha para executar varios processos ao mesmo tempo.

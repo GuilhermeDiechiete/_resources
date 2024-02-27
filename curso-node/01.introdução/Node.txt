@@ -1,0 +1,22 @@
+
+Node.js
+
+Node.js é um ambiente de tempo de execução (runtime) de código aberto e multiplataforma que permite aos desenvolvedores executar JavaScript do lado do servidor. Ele utiliza o motor V8 JavaScript, desenvolvido pelo Google, que também é usado no navegador Google Chrome.
+
+Antes do Node.js, o JavaScript era principalmente utilizado no lado do cliente, em navegadores web, para criar interatividade em páginas da web. Com o Node.js, os desenvolvedores podem agora utilizar JavaScript também no lado do servidor, o que abre portas para várias possibilidades, como:
+
+01. Desenvolvimento de aplicativos web em tempo real: Com Node.js, é possível criar aplicativos web que podem lidar com conexões persistentes de clientes, como chats em tempo real, jogos online, etc.
+
+02. APIs e Serviços Web: Node.js é frequentemente usado para construir APIs RESTful e serviços web que podem ser consumidos por clientes web ou aplicativos móveis.
+
+03. Manipulação de arquivos e operações de entrada/saída (I/O): Node.js é eficiente em operações de entrada e saída não bloqueantes, o que o torna ideal para manipulação de arquivos, acesso a banco de dados e comunicação com outros sistemas.
+
+04. Build Tools e automação de tarefas: Node.js é frequentemente usado para desenvolvimento de ferramentas de linha de comando, scripts de automação e ferramentas de construção de front-end, como o Gulp e o Grunt.
+
+05. Microservices e arquiteturas baseadas em eventos: Sua capacidade de lidar com eventos de forma eficiente o torna uma escolha popular para construir sistemas baseados em microserviços e arquiteturas orientadas a eventos.
+
+Em resumo, o Node.js ampliou o alcance do JavaScript além do navegador, permitindo aos desenvolvedores construir uma variedade de aplicativos e serviços poderosos no lado do servidor.
+
+
+
+

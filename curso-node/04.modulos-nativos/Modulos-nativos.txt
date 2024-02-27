@@ -1,0 +1,19 @@
+http: Fornece funcionalidades para criar servidores HTTP e fazer solicitações HTTP.
+
+fs: Permite interagir com o sistema de arquivos, permitindo a leitura e escrita de arquivos.
+
+path: Fornece utilitários para trabalhar com caminhos de arquivos e diretórios.
+
+util: Oferece diversas funções utilitárias úteis, como formatação de strings e tratamento de erros.
+
+events: Fornece uma infraestrutura para lidar com eventos, permitindo que objetos emitam e escutem eventos.
+
+os: Fornece informações sobre o sistema operacional, como CPU, memória e interfaces de rede.
+
+querystring: Oferece funcionalidades para manipular strings de consulta (query strings) usadas em URLs.
+
+crypto: Permite criptografar e descriptografar dados, gerar hashes e criar certificados SSL.
+
+stream: Fornece uma API para trabalhar com fluxos de dados, permitindo a leitura e escrita de dados de forma eficiente.
+
+buffer: Fornece funcionalidades para manipular dados em formato de buffer, útil para operações de baixo nível com dados binários.

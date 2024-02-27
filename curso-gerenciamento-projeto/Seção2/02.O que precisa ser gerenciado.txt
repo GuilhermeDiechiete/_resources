@@ -1,0 +1,31 @@
+
+O que precisa ser gerenciado:
+
+    Integração:
+
+        1. Escopo: O trabalho necessário para que o projeto atinja o seu objetivo. ( caminho exato, sem rodeios ).
+
+        2. Tempo/cronograma: Analisar o trabalho a ser realizado no projeto, transformá-lo em atividades a serem realizadas, estimar o tempo para essas atividades,
+            definir quem desenvolvera essas atividades e desenvolver um cronograma para todas as atividades.
+
+        3. Custos: Estimar quais serão os custos de cada atividade, para definir com segurança qual o orçamento do projeto, tambem deve ter monitoramento dos custos durante o ciclo de vida do projeto.
+
+        4. Riscos: O risco surge com da incerteza, exemplo, acidente em uma obra, pode ou não acontecer, para isso existe algumas tecnicas, que é aplicada para evitar o menor prejuizo no projeto. ( Ter proatividade e antecipação de situações ), redução dos custos do projeto em até 20%.
+
+        5. Partes interessadas ( Stakeholders ): São pessoas, entidades ou organizações que possuem interesse direto ou indireto no seu projeto, ou que impacta em alguma parte do projeto, mapear as pessoas ou entidades e utilizar corretamente.
+
+        6. Qualidade: Garantir a qualidade do que será desenvolvido, definir quais metodos iremos utilizar para buscar a qualidade, quais ferramentas vamos utilizar e quando serão usadas, podemos fazer testes para garantir a qualidade, ou em um projeto de arquitetura, revisar os documentos.
+
+        7. Recursos: Materiais, equipamentos e recursos humanos(equipe do projeto), habilidades tecnicas de pessoas, para isso é necessário desenvolver habilidades de liderança para atribuir papeis, delegar tarefas para a equipe.
+
+        8. Comunicação: E-mails, conversa com o cliente, equipe, ...., essas comunicações precisa ser gerenciadas, padronizar os envios de relatórios, definir dia, hora, padrao de cocumento, conteudo correto, formato,... ( gerente de projeto é o que mais comunica ), mais critica, muito importante.
+
+        9. Aquisições: Foca nos processos necessários para aquisições, tercerizado ao projeto, comprar ou fazer, o que buscar para o projeto e o que tercerizar. Ex: Dar tempo a um programador para estudar uma linguagem ou tercerizo alguem que já saiba a linguagem. ( necessário verificar o serviço do terceiro, para nao prejudicar o serviço do projeto )
+
+        10. Integração: Tem como principal objetivo integrar e consolidar as atividades e processos das outras 9 áreas de conhecimento.
+
+
+Área mais critica do projeto? Depende de projeto para projeto.
+
+Lições: https://www.proj4.me/blog/7-erros-no-gerenciamento-de-projetos?utm_source=udemy&utm_medium=referral&utm_campaign=curso-planejamento-e-gestao-de-projetos
+

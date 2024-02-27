@@ -1,0 +1,5 @@
+
+
+EAP - Estrutura Analitica do Projeto ( Work Breakdown Structure )
+
+    Representação estruturada do escopo do projeto, dividir em partes o projeto.

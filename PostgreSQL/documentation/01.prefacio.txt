@@ -1,0 +1,17 @@
+Prefácio
+
+Este livro é a documentação oficial do PostgreSQL. Foi escrito pelos desenvolvedores do PostgreSQL e outros voluntários em paralelo ao desenvolvimento do software PostgreSQL. Ele descreve toda a funcionalidade que a versão atual do PostgreSQL oficialmente suporta.
+
+Para tornar a grande quantidade de informações sobre o PostgreSQL gerenciável, este livro foi organizado em várias partes. Cada parte é direcionada a uma classe diferente de usuários ou a usuários em diferentes estágios de sua experiência com o PostgreSQL:
+• Parte I é uma introdução informal para novos usuários.
+
+• Parte II documenta o ambiente da linguagem de consulta SQL, incluindo tipos de dados e funções, bem como ajuste de desempenho em nível de usuário. Todo usuário do PostgreSQL deve ler isso.
+
+• Parte III descreve a instalação e administração do servidor. Todos que executam um servidor PostgreSQL, seja para uso privado ou para outros, devem ler esta parte.
+• Parte IV descreve as interfaces de programação para programas cliente do PostgreSQL.
+
+• Parte V contém informações para usuários avançados sobre as capacidades de extensibilidade do servidor. Os tópicos incluem tipos de dados e funções definidos pelo usuário.
+
+• Parte VI contém informações de referência sobre comandos SQL, programas cliente e servidor. Esta parte suporta as outras partes com informações estruturadas classificadas por comando ou programa.
+
+• Parte VII contém informações diversas que podem ser úteis para desenvolvedores do PostgreSQL.
