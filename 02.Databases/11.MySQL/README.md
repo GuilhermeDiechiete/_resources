@@ -32,8 +32,6 @@ Para começar a usar o MySQL, siga estas etapas:
 
 5. **Manipulação de Dados**: Insira, atualize, exclua e consulte dados em suas tabelas usando comandos SQL.
 
-## Comandos Básicos 
-
 # Comandos Comuns do MySQL
 
 Bem-vindo ao README dos Comandos Comuns do MySQL! Este documento contém uma lista dos 50 comandos mais comuns utilizados no MySQL.
