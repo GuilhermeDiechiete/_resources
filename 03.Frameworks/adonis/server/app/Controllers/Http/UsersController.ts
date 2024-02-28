@@ -13,7 +13,9 @@ export default class UsersController {
       user.related('keys').create({ key: userKey })
       return 'Usuário criado com sucesso.'
       
+
     } catch (error) {
+      
       if(error?.messages?.errors[0]?.message) {
         return response.status(400).json({ message: error.messages.errors[0].message })
       } 

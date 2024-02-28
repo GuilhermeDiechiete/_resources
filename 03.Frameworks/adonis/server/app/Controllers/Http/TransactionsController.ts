@@ -91,6 +91,16 @@ export default class TransactionsController {
   public async getByMonth({ params, auth, response }: HttpContextContract) {
     try {
       const user = auth.user 
+
+      // Filter: opções -> date/05/02/2024 , category/Essenciais, destiny/Posto , account/Sicredi , status/false
+      const filter = params.filter 
+      const option_filter = params.option 
+
+      let order = params.order // amount crescente, amount decrescente, status true, status false
+      let option_order = 'asc' 
+
+     
+
       if(!user){
         return response.status(401).json({ message: 'Não autorizado.'})
       }
@@ -98,25 +108,37 @@ export default class TransactionsController {
       .whereRaw('EXTRACT(YEAR FROM date) = ?', [params.year])
       .whereRaw('EXTRACT(MONTH FROM date) = ?', [params.month])
       .where('type', 'expense')
+      .where(filter, option_filter)
 
       const incomes = await user.related('transactions').query()
       .whereRaw('EXTRACT(YEAR FROM date) = ?', [params.year])
       .whereRaw('EXTRACT(MONTH FROM date) = ?', [params.month])
       .where('type', 'income')
+      .where(filter, option_filter)
 
       const investments = await user.related('transactions').query()
       .whereRaw('EXTRACT(YEAR FROM date) = ?', [params.year])
       .whereRaw('EXTRACT(MONTH FROM date) = ?', [params.month])
       .where('type', 'investment')
+      .where(filter, option_filter)
 
-      const totalByMonthExpenses: number = expenses.reduce((acc, expense) => acc + Number(expense.amount), 0)
-      const totalByMonthIncomes: number = incomes.reduce((acc, income) => acc + Number(income.amount), 0)
-      const totalByMonthInvestments: number = investments.reduce((acc, investment) => acc + Number(investment.amount), 0)
+      const totalExpenses: number = expenses.reduce((acc, expense) => acc + Number(expense.amount), 0)
+      const totalIncomes: number = incomes.reduce((acc, income) => acc + Number(income.amount), 0)
+      const totalInvestments: number = investments.reduce((acc, investment) => acc + Number(investment.amount), 0)
 
-      const surplus =  totalByMonthIncomes - (totalByMonthExpenses + totalByMonthInvestments)
+      const surplus =  totalIncomes - (totalExpenses + totalInvestments)
 
       return response.status(200).json({
-        expenses, incomes, investments, totalByMonthExpenses, totalByMonthIncomes, totalByMonthInvestments, surplus
+        transactions: {
+          expenses, 
+          incomes, 
+          investments, 
+          totalExpenses, 
+          totalIncomes, 
+          totalInvestments, 
+          surplus
+        }
+        
       })
     } catch (error) {
       if(error?.messages?.errors[0]?.message) {

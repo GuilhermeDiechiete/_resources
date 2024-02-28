@@ -1,0 +1,43 @@
+
+.box {
+    padding: 1em;
+}
+
+.my-btn-transaction {
+    background-color: black;
+    width: 100%;
+  
+   
+}
+
+.item-nav {
+    background-color: rgb(56, 55, 55);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1em 0;
+    border: 1px solid black;
+}
+
+.box-display {
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.display {
+    flex: 1;
+    text-align: left;
+    color: white;
+    background-color: rgb(64, 63, 63);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.5em;
+}
+.btn-display {
+    width: 100%;
+    background-color: rgb(105, 105, 105);
+    padding: 0.4em;
+    border-radius: 0.5em;
+}
+
+

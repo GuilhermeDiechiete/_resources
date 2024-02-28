@@ -14,7 +14,8 @@ Route.group(() => {
     })
     .prefix('/:id')
     .middleware('auth')
-    .where('id', {
+    .where('id', 
+    {
         match: /^[0-9]+$/,
         cast: (id) => Number(id),
     })
