@@ -2,13 +2,15 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   devtools: { enabled: false },
 
-  build: {
-    transpile: ['vuetify'],
-  },
-
   css: [
     '@/assets/css/main.css'
   ],
+  
+
+
+  build: {
+    transpile: ['vuetify'],
+  },
 
 
   modules: [
@@ -18,8 +20,14 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }))
       })
     },
-    //...
+    '@pinia/nuxt',
+    // outros módulos
   ],
+  
+  pinia: {
+    storesDirs: ['./stores/**', './custom-folder/stores/**'],
+  },
+
   vite: {
     vue: {
       template: {

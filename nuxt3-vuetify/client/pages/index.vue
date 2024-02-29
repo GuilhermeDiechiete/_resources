@@ -1,16 +1,19 @@
 <template>
-    <section>
-        <div class="box">
-            <v-btn class="my-btn-transaction">
-                +
-            </v-btn>
-        </div>
-        
-        
-        <div class="box-display">
-            <Display title="Despesas" amount="1.000" />
-            <Display title="Despesas" amount="2.000" />
-            <Display title="Despesas" amount="1.000" />
-        </div>
-    </section>
+    <NuxtLayout :name="layout">
+        <section class="my-container">
+            <BtnAddTransaction />
+            <BoxDisplay />
+            <Messages />
+            <TableMonth />
+        </section> 
+    </NuxtLayout>
+       
+    
+    
 </template>
+
+<script setup lang="ts">
+
+const layout = 'default'
+
+</script>

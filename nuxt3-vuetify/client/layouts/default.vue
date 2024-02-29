@@ -1,11 +1,7 @@
 <template>
     <v-app id="inspire">
       <v-navigation-drawer v-model="drawer">
-        <ItemNavegation to="/" text="OrgFin"/>
-        <ItemNavegation to="/categories" text="Categorias"/>
-        <ItemNavegation to="/accounts" text="Contas"/>
-        <ItemNavegation to="/" text="Relatórios"/>
-        <ItemNavegation to="/" text="Calculadora"/>
+        <NavBar />
       </v-navigation-drawer>
   
       <v-app-bar>
@@ -16,7 +12,7 @@
       </v-app-bar>
   
       <v-main>
-        <NuxtPage/>
+        <slot></slot>
       </v-main>
     </v-app>
   </template>

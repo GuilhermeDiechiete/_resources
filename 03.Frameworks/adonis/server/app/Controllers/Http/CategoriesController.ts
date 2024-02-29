@@ -8,9 +8,12 @@ export default class CategoriesController {
       if(!user){
         return response.status(401).json({ message: 'Não autorizado.'})
       }
+
       const categories = await user.related('categories').query()
       .where('user_id', user.id)
+
       return categories
+
     } catch (error) {
       if(error?.messages?.errors[0]?.message) {
         return response.status(400).json({ message: error.messages.errors[0].message })
@@ -34,8 +37,10 @@ export default class CategoriesController {
       if(exists) {
         return response.status(400).json({ message: 'Está Categoria já existe.'})
       }
+
       await user.related('categories').create({ name })
       return 'Categoria criada com sucesso.'
+      
     } catch (error) {
       if(error?.messages?.errors[0]?.message) {
         return response.status(400).json({ message: error.messages.errors[0].message })

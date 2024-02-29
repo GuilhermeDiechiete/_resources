@@ -1,43 +1,62 @@
 
-.box {
+.my-container {
     padding: 1em;
-}
-
-.my-btn-transaction {
-    background-color: black;
-    width: 100%;
-  
-   
-}
-
-.item-nav {
-    background-color: rgb(56, 55, 55);
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    padding: 1em 0;
-    border: 1px solid black;
 }
 
 .box-display {
     display: flex;
     flex-wrap: wrap;
-  
+    
 }
 .display {
     flex: 1;
     text-align: left;
     color: white;
-    background-color: rgb(64, 63, 63);
-    padding: 1em;
+    background-color: rgb(41, 40, 40);
+    padding: 1em 2em;
     margin: 1em;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
+   
 }
-.btn-display {
-    width: 100%;
-    background-color: rgb(105, 105, 105);
-    padding: 0.4em;
-    border-radius: 0.5em;
+.display h1 {
+    font-size: 1.2em;
+    padding-top: 0.8em;
+}
+.display h2 {
+    font-size: 1em;
+    color: rgb(139, 138, 138);
 }
 
+.btn-add-transaction {
+    background-color: rgb(185, 50, 1);
+}
+
+.my-box-form {
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 0.4em;
+    background-color: rgb(38, 37, 37);
+}
+
+.message-error {
+    width: 100%;
+    background-color: rgb(246, 108, 108);
+    border-radius: 0.5em;
+    font-size: 1em;
+    padding: 1em 0;
+    vertical-align: 50%;
+    margin: 2em 0;
+    text-align: center;
+}
+.message-success {
+    width: 100%;
+    background-color: rgb(69, 144, 71);
+    border-radius: 0.5em;
+    font-size: 1em;
+    padding: 1em 0;
+    vertical-align: 50%;
+    margin: 2em 0;
+    text-align: center;
+}
 

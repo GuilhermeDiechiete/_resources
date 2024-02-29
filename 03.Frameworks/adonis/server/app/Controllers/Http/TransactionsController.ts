@@ -76,8 +76,15 @@ export default class TransactionsController {
       const totalAnnualInvestments: number = totalInvestments.reduce((acc, { total }) => acc + total, 0);
 
       return response.status(200).json({
-        totalExpenses, totalIncomes, totalInvestments,
-        totalAnnualExpenses, totalAnnualIncomes, totalAnnualInvestments
+        transactions: {
+          totalExpenses, 
+          totalIncomes, 
+          totalInvestments,
+          totalAnnualExpenses, 
+          totalAnnualIncomes, 
+          totalAnnualInvestments
+        }
+        
       })
   
     } catch (error) {
@@ -91,16 +98,6 @@ export default class TransactionsController {
   public async getByMonth({ params, auth, response }: HttpContextContract) {
     try {
       const user = auth.user 
-
-      // Filter: opções -> date/05/02/2024 , category/Essenciais, destiny/Posto , account/Sicredi , status/false
-      const filter = params.filter 
-      const option_filter = params.option 
-
-      let order = params.order // amount crescente, amount decrescente, status true, status false
-      let option_order = 'asc' 
-
-     
-
       if(!user){
         return response.status(401).json({ message: 'Não autorizado.'})
       }
@@ -108,19 +105,19 @@ export default class TransactionsController {
       .whereRaw('EXTRACT(YEAR FROM date) = ?', [params.year])
       .whereRaw('EXTRACT(MONTH FROM date) = ?', [params.month])
       .where('type', 'expense')
-      .where(filter, option_filter)
+      .where(params.filter , params.option)
 
       const incomes = await user.related('transactions').query()
       .whereRaw('EXTRACT(YEAR FROM date) = ?', [params.year])
       .whereRaw('EXTRACT(MONTH FROM date) = ?', [params.month])
       .where('type', 'income')
-      .where(filter, option_filter)
+      .where(params.filter, params.option)
 
       const investments = await user.related('transactions').query()
       .whereRaw('EXTRACT(YEAR FROM date) = ?', [params.year])
       .whereRaw('EXTRACT(MONTH FROM date) = ?', [params.month])
       .where('type', 'investment')
-      .where(filter, option_filter)
+      .where(params.filter, params.option)
 
       const totalExpenses: number = expenses.reduce((acc, expense) => acc + Number(expense.amount), 0)
       const totalIncomes: number = incomes.reduce((acc, income) => acc + Number(income.amount), 0)
@@ -176,7 +173,7 @@ export default class TransactionsController {
 
       if(transaction && transaction.status !== undefined) {
         transaction.status = !transaction.status;
-        await transaction.save(); // Salvar a transação atualizada
+        await transaction.save();
       }
        
 

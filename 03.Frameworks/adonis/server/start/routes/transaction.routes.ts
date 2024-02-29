@@ -11,7 +11,7 @@ Route.group(() => {
         Route.get('/', 'TransactionsController.getByYear')
         Route.get('/:month', 'TransactionsController.getByMonth')
 
-    }).prefix('/:order/:filter/:option/:year')
+    }).prefix('/:year/:filter/:option')
     .where('year', /^[0-9]{4}$/) 
     .where('month', /^[0-9]{1,2}$/) 
 
