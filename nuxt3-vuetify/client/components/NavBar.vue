@@ -5,8 +5,8 @@
           <v-list>
             <v-list-item
               prepend-avatar="https://cdn.vuetifyjs.com/images/john.png"
-              title="John Leider"
-              subtitle="john@google.com">
+              :title="store.user.username"
+              :subtitle="store.user.email">
 
               <template v-slot:append>
                 <v-btn
@@ -45,17 +45,18 @@
       </v-layout>
     </v-card>
   </template>
-<script>
-export default {
-  data: () => ({
-    items: [
+<script setup lang="ts">
+
+const store = useUserStore()
+await store.show()
+
+const items = [
       { text: 'Iniciar', icon: 'mdi-home', to:'/'},
       { text: 'Categorias', icon: 'mdi-widgets', to:'/categories'},
       { text: 'Contas', icon: 'mdi-star', to:'/accounts'},
       { text: 'Relatórios', icon: 'mdi-folder', to:'/reports'},
-    ],
-  }),
-}
+    ]
+
 </script>
 
 

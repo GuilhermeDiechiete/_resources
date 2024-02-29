@@ -20,9 +20,11 @@ const store = useCategoryStore()
 const name = ref('')
 const type = ref('')
 
-const create = () => {
-  store.register( name.value, type.value);
+const create = async () => {
+  await store.register( name.value, type.value);
   name.value = ''
+  type.value = ''
+  await store.index()
 };
 
 </script>

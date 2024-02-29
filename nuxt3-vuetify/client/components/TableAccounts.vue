@@ -40,7 +40,7 @@ watch(() => store.accounts, (newAccounts) => {
 const deleteAccount = async (id:number) => {
   await store.delete(id); 
   await store.index();
-};
+}
 
 // renderização 
 const headers = [

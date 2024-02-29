@@ -16,7 +16,7 @@
             <span v-if="item.type === 'investment'">Investimentos</span>
           </td>
           <td>
-            <v-btn color="primary" @click.prevent="store.delete(item.id)">
+            <v-btn color="primary" @click.prevent="deleteCategory(item.id)">
               Button
             </v-btn>
           </td>
@@ -38,8 +38,12 @@ const categories = ref(store.categories) // categorias
 // monitora mudanças em categories
 watch(() => store.categories, (newCategories) => {
   categories.value = newCategories;
-  store.index() // apos uma mudança, ele chama a lista novamente e add em categories
-});
+})
+
+const deleteCategory = async (id:number) => {
+  await store.delete(id); 
+  await store.index();
+};
 
 // renderização 
 const headers = [
