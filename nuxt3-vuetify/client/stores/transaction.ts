@@ -5,14 +5,21 @@ const API = 'http://localhost:4000/transaction';
 
 const currentDate = new Date();
 
+interface TransactionData {
+    expenses: never[]; // Defina o tipo correto para os seus dados de despesas
+    incomes: never[]; // Defina o tipo correto para os seus dados de receitas
+    investments: never[]; // Defina o tipo correto para os seus dados de investimentos
+    totalByMonthExpenses: number; // Defina o tipo correto para o total de despesas do mês
+    totalByMonthIncomes: number; // Defina o tipo correto para o total de receitas do mês
+    totalByMonthInvestments: number; // Defina o tipo correto para o total de investimentos do mês
+    surplus: number; // Defina o tipo correto para o saldo do mês
+}
+
 export const useTransactionStore = defineStore('transactions', {
 
     state: () => {
         return {
-            tableSelected: ref('monthly'), 
-            
-            filter: ref(''),
-            order: ref('asc'),
+            tableSelected: ref('expense'), 
             
             day: ref(currentDate.getDay()),
             month: ref(currentDate.getMonth() + 1),
@@ -23,10 +30,10 @@ export const useTransactionStore = defineStore('transactions', {
             investments: ref([]),
             transactions: ref([]),
 
-            totalByMonthExpenses: ref(''),
-            totalByMonthIncomes: ref(''),
-            totalByMonthInvestments: ref(''),
-            surplus: ref(''),
+            totalByMonthExpenses: ref(0),
+            totalByMonthIncomes: ref(0),
+            totalByMonthInvestments: ref(0),
+            surplus: ref(0),
 
             // getByYear
             totalExpenses: ref([]), 
@@ -45,7 +52,6 @@ export const useTransactionStore = defineStore('transactions', {
     actions: {
         async create ( transaction: any ) {
             try {
-                console.log(transaction);
                 if(typeof localStorage !== 'undefined') {
                     const token = localStorage.getItem('token');
                    if(token) {
@@ -68,6 +74,7 @@ export const useTransactionStore = defineStore('transactions', {
                         
                     }
                 }); 
+                console.log(transaction)
                 } 
                 }
 
@@ -91,24 +98,31 @@ export const useTransactionStore = defineStore('transactions', {
                 if(typeof localStorage !== 'undefined') {
                     const token = localStorage.getItem('token');
                     if(token) {
-                    this.transactions = await $fetch(`${API}/${this.order}/${this.year}/${this.month}`, {
+                    const response = await $fetch<TransactionData>(`${API}/${this.month}/${this.year}`, {
                         method: 'GET',
                         headers: {
                             Authorization: token
                         },
                     });
+
+                this.expenses = response.expenses;
+                this.incomes = response.incomes;
+                this.investments = response.investments;
+
+                this.totalByMonthExpenses = response.totalByMonthExpenses;
+                this.totalByMonthIncomes = response.totalByMonthIncomes;
+                this.totalByMonthInvestments = response.totalByMonthInvestments;
+                this.surplus = response.surplus;
+
+                console.log(this.month, this.year)
+                console.log(response)
                     } 
                 }
-                this.expenses = this.transactions.expenses;
-                this.incomes = this.transactions.incomes;
-                this.investments = this.transactions.investments;
+              
+                console.log('mostrando despesas', this.expenses)
 
-                this.totalByMonthExpenses = this.transactions.totalByMonthExpenses;
-                this.totalByMonthIncomes = this.transactions.totalByMonthIncomes;
-                this.totalByMonthInvestments = this.transactions.totalByMonthInvestments;
-                this.surplus = this.transactions.surplus;
-
-                console.log(this.filter, this.order, this.month, this.year);
+                
+               
             } catch (error) {
                 console.log(error);
             }
@@ -119,7 +133,7 @@ export const useTransactionStore = defineStore('transactions', {
                 if(typeof localStorage !== 'undefined') {
                     const token = localStorage.getItem('token');
                     if(token) {
-                    this.transactions = await $fetch(`${API}/${this.order}/${this.year}`, {
+                    this.transactions = await $fetch(`${API}/${this.year}`, {
                         method: 'GET',
                         headers: {
                             Authorization: token

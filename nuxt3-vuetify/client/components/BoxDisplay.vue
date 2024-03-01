@@ -2,21 +2,21 @@
     <section class="my-box">
       <v-row justify="center">
         <v-col cols="12" sm="4">
-          <div class="flex-item">
+          <div class="flex-item" @click="selected('expense')">
             <p>Despesas</p>
-            <h1>{{ totalExpenses }}</h1>
+            <h1>R$ {{ totalExpenses }}</h1>
           </div>
         </v-col>
         <v-col cols="12" sm="4">
-          <div class="flex-item">
+          <div class="flex-item" @click="selected('income')">
             <p>Rendimentos</p>
-            <h1>{{ totalIncomes }}</h1>
+            <h1>R$ {{ totalIncomes }}</h1>
           </div>
         </v-col>
         <v-col cols="12" sm="4">
-          <div class="flex-item">
+          <div class="flex-item" @click="selected('investment')">
             <p>Investimentos</p>
-            <h1>{{ totalInvestments }}</h1>
+            <h1>R$ {{ totalInvestments }}</h1>
           </div>
         </v-col>
       </v-row>
@@ -27,9 +27,12 @@
 
 const store = useTransactionStore()
 
-const totalExpenses = ref(store.totalByMonthExpenses || 0)
-const totalIncomes = ref(store.totalByMonthIncomes || 0)
-const totalInvestments = ref(store.totalAnnualInvestments || 0)
+const selected = ( selected: string ) => {
+  store.tableSelected = selected
+}
+const totalExpenses = ref(store.totalByMonthExpenses)
+const totalIncomes = ref(store.totalByMonthIncomes)
+const totalInvestments = ref(store.totalAnnualInvestments)
 </script>
   
   <style>

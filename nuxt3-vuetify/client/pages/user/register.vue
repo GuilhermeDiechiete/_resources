@@ -1,3 +1,4 @@
 <template>
+    <Messages />
     <FormCreateUser />
 </template>

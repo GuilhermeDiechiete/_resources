@@ -45,12 +45,13 @@ const deleteAccount = async (id:number) => {
 // renderização 
 const headers = [
   {
-    title: 'Nome', 
+    title: 'NOME', 
     align: 'start',
     sortable: false,
     key: 'name',
   },
-  { title: 'Tipo de transação', key: 'amount' },
+  { title: 'VALOR EM CONTA', key: 'amount' },
+  { title: 'OPÇÕES' },
 ];
 
 </script>

@@ -31,7 +31,7 @@
 const search = ref('') // campo de busca
 
 const store = useCategoryStore(); // importação do store de categoria
-store.index() // buscando todas as categorias
+await store.index() // buscando todas as categorias
 
 const categories = ref(store.categories) // categorias
 
@@ -48,12 +48,13 @@ const deleteCategory = async (id:number) => {
 // renderização 
 const headers = [
   {
-    title: 'Nome',
+    title: 'NOME',
     align: 'start',
     sortable: false,
     key: 'name',
   },
-  { title: 'Tipo de transação', key: 'type' },
+  { title: 'TIPO DE TRANSAÇÃO', key: 'type' },
+  { title: 'OPÇÕES' },
 ];
 
 </script>
