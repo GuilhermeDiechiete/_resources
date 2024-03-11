@@ -1,36 +1,36 @@
 
+'''
+Dicionários consistem em uma estrutura de dados similar às listas, mas com propriedades de acesso diferentes.
+Um dicionário é composto de um conjunto de chaves e valores.
+o dicionário em si consiste em relacionar uma chave a um valor específico.
+
+Em Python, criamos dicionários utilizando chaves {}.
+Cada elemento do dicionário é uma combinação de chave e valor.
+'''
+
+tabela = {
+    "Alface": 0.45,
+    "Batata": 1.20,
+    "Tomate": 2.30,
+    "Feijão": 1.50
+}
+print(tabela)
 
 
-# Criando um dicionário com pares chave-valor
-meu_dicionario = {"nome": "João", "idade": 30, "cidade": "São Paulo"}
+# buscar um elemento
+print(tabela["Tomate"])
 
-# Acessando valores através das chaves
-print("Nome:", meu_dicionario["nome"])    # Saída: Nome: João
-print("Idade:", meu_dicionario["idade"])  # Saída: Idade: 30
-print("Cidade:", meu_dicionario["cidade"])# Saída: Cidade: São Paulo
 
-# Adicionando um novo par chave-valor
-meu_dicionario["profissão"] = "Engenheiro"
-print("Profissão:", meu_dicionario["profissão"])  # Saída: Profissão: Engenheiro
+# adicionar um elemento
+tabela["Cebola"] = 1.20
+print(tabela)
 
-# Modificando um valor existente
-meu_dicionario["idade"] = 35
-print("Idade atualizada:", meu_dicionario["idade"])  # Saída: Idade atualizada: 35
+# listar as keys
+print(tabela.keys())
 
-# Removendo um par chave-valor
-del meu_dicionario["cidade"]
-print("Dicionário após remover 'cidade':", meu_dicionario)  # Saída: {'nome': 'João', 'idade': 35, 'profissão': 'Engenheiro'}
+# listar os valores
+print(tabela.values())
 
-# Verificando se uma chave existe no dicionário
-if "profissão" in meu_dicionario:
-    print("A chave 'profissão' está presente no dicionário.")  # Saída: A chave 'profissão' está presente no dicionário.
-
-# Iterando sobre as chaves do dicionário
-print("Chaves do dicionário:")
-for chave in meu_dicionario:
-    print(chave)
-# Saída:
-# Chaves do dicionário:
-# nome
-# idade
-# profissão
+# deletar um elemento
+del tabela["Tomate"]
+print(tabela)
