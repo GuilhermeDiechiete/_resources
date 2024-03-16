@@ -1,0 +1,26 @@
+
+COMANDOS DE INSPEÇÃO DE HARDWARE
+
+
+lspci - Mostra todos os componentes conectados ao barramento PCI, como controladores de disco, placas externas, controladoras USB, placas integradas, etc...
+
+lsusb - mostra os dispositivos USB conectados à maquina
+lsusb -t - exibe os dispositivos USB em uma árvore hierárquica.
+
+lsmod - lista todos os módulos atualmente carregados ( exibição em 3 colunas : Module(nome) Size(memoria ocupada) Used by(modulos dependentes))
+lsmod | fgrep <nome_do_modulo_desejado>
+lsmod | fgrep snd_sof_utils [ exemplo ]
+
+modprobe - utilizado para carregar ou descarregar modulos do kernel
+modprobe -r - descarregar modulo
+
+
+SOBRE OS ARQUIVOS DE CONFIRAÇÕES 
+
+[ Os comando lspci, lsusb e lsmod serverm como facilitadores de leitura das informações de hardware armazenadas pelo sistema. Essas informações dos processos ativos e de recursos de hardware especiaus localizados nos diretorios /proc e /sys ]
+
+/proc -> contem arquivos com informações dos processos ativos e de recursos de hardware. Alguns arquivos importantes
+    /proc/cpuinfo ( informações dos processadores do sistema)
+    /proc/dma (informações sobre os canais de acesso direto a memoria)
+    /proc/ioports ( informações sobre endereços de memoria usados pelos dispositivos)
+    /proc/interrupts ( informações sobre requisições de interrupções (IRQ) nos processadores)
